@@ -1,15 +1,15 @@
 class AppsController < ApplicationController
-  # before_action :set_app, only: %i[ show update destroy ]
+  # before_action :set_app, only: %i[ index show update destroy ]
 
   # GET /apps
   def index
     @apps = App.all
-
     render json: @apps
   end
 
   # GET /apps/1
   def show
+    @app =  set_app
     render json: @app
   end
 
