@@ -7,3 +7,25 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts "Seeding apps!"
+App.create!([
+    {
+     name: "Barter Barn",
+    description: "flibbity",
+    link: "doggie",
+    demo: "diggity"
+    },
+    {
+        name: "Barter Barn",
+       description: "flibbity",
+       link: "doggie",
+       demo: "diggity"
+       },
+       {
+        name: "Barter Barn",
+       description: "flibbity",
+       link: "doggie",
+       demo: "diggity"
+       },
+])

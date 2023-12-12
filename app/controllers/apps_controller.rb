@@ -1,5 +1,5 @@
 class AppsController < ApplicationController
-  before_action :set_app, only: %i[ show update destroy ]
+  # before_action :set_app, only: %i[ show update destroy ]
 
   # GET /apps
   def index
@@ -46,6 +46,6 @@ class AppsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def app_params
-      params.fetch(:app, {})
+      params.permit(:name, :description, :link, :demo)
     end
 end

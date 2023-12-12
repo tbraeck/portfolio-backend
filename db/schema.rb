@@ -12,6 +12,10 @@
 
 ActiveRecord::Schema[7.1].define(version: 2023_12_12_013045) do
   create_table "apps", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.text "link"
+    t.string "demo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

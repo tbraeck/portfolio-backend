@@ -3,7 +3,7 @@ class CreateApps < ActiveRecord::Migration[7.1]
     create_table :apps do |t|
       t.string :name
       t.text :description
-      t.link :link
+      t.text :link
       t.string :demo
 
       t.timestamps
