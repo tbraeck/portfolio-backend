@@ -12,15 +12,17 @@ puts "Seeding apps!"
 App.create!([
     {
      name: "Barter Barn",
-    description: "flibbity",
-    link: "doggie",
-    demo: "diggity"
+    description: "This app was created for communities to be able to easily access a bartering system for goods and services.
+    ",
+    link: "https://github.com/tbraeck/barter_barn_v2",
+    demo: "https://youtu.be/H4KahrCLvLM"
     },
     {
-        name: "Barter Barn",
-       description: "flibbity",
-       link: "doggie",
-       demo: "diggity"
+        name: "Teach Source",
+       description: "This app was created to be a resource database for all educators to access for their instructional needs.
+       ",
+       link: "https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main",
+       demo: "https://youtu.be/KeARm1YrWls"
        },
        {
         name: "Barter Barn",

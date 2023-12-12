@@ -6,7 +6,7 @@ function AppProvider({ children }) {
   const [allApps, setAllApps] = useState([]);
   
   useEffect(()=> {
-    fetch("http://localhost:3000/apps").then((res)=> {
+    fetch("/apps").then((res)=> {
       if(res.ok){
         res.json().then((data) => {
           setAllApps(data)})
@@ -14,6 +14,8 @@ function AppProvider({ children }) {
     })
 
   }, [])
+
+  console.log(allApps)
   return (
     <AppContext.Provider value={{ allApps, setAllApps }}>
       {children}
