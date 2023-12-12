@@ -32,8 +32,8 @@ App.create!([
        },
 ])
 
-App.all.each do |good|
-    image_file_path = Rails.root.join('db/images/calavera.png')
+App.all.each do |app|
+    image_file_path = Rails.root.join('db/images/logo192.png')
     image = File.open(image_file_path)
-    app.main_image.attach(io: image, filename: 'calavera.png')
+    app.main_image.attach(io: image, filename: 'logo192.png')
   end

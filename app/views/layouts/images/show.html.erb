@@ -1,0 +1,6 @@
+<div style="width: 200px; height: auto;">
+  <% if @app.main_image.attached? %>
+    <%= link_to image_tag(@app.main_image.variant(resize: '200x200'), "style: 100%"), apps_path %>
+  <% end %>
+</div>
+

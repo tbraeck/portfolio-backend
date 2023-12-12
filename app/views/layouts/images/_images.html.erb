@@ -1,0 +1,7 @@
+<!-- Your main view file -->
+
+<%= form_with(model: app, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: app %>
+<% end %>
+
+
