@@ -46,6 +46,6 @@ class AppsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def app_params
-      params.permit(:name, :description, :link, :demo)
+      params.permit(:name, :description, :link, :demo, :main_image)
     end
 end

@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-puts "Seeding apps!"
+puts "🥷👩‍🦰 Seeding apps!"
 App.create!([
     {
      name: "Barter Barn",
@@ -31,3 +31,9 @@ App.create!([
        demo: "diggity"
        },
 ])
+
+App.all.each do |good|
+    image_file_path = Rails.root.join('db/images/calavera.png')
+    image = File.open(image_file_path)
+    app.main_image.attach(io: image, filename: 'calavera.png')
+  end
