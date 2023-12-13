@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
-import Header from './Header'
-import Home from './Home';
+import Header from './general/Header'
+import Home from './general/Home';
 import ApplicationList from './ApplicationList';
 import Blog from './Blog';
 import {Routes, Route} from 'react-router-dom';
