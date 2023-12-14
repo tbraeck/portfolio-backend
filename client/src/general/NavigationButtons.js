@@ -9,7 +9,7 @@ const NavigationButtons = () => {
   };
 
   const handleGoForward = () => {
-    navigate(1); // Go forward one step
+    navigate(1); 
   };
 
   return (

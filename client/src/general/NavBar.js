@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Link, useNavigate } from 'react-router-dom'
 import { AppContext } from '../contexts/AppContext';
-
+import NavigationButtons from './NavigationButtons';
 const NavBar = () => {
 const navigate = useNavigate();
 const {allApps, setAllApps} = useContext(AppContext)
@@ -29,6 +29,12 @@ return (
       <button className='btn btn-secondary' type='button'>
       <img src="/sun.png" style={{width:"50px"}} alt="User Icon" className='user_icon' />
         <span className='user-text'>HOME</span>
+      </button>
+    </Link>
+    <Link to="/about" className='btn '>
+      <button  type='button' className='btn btn-secondary'>
+      <img src="/home.png" style={{width:"50px"}} alt="User Icon" className='user_icon' />
+      <span className='user-text'>ABOUT</span>
       </button>
     </Link>
     <Link to="/applications" className='btn '>

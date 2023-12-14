@@ -4,14 +4,14 @@ import NavigationButtons from './NavigationButtons'
 
 const Header = () => {
   return (
-    <div className="headerCont">
+  <div className="headerCont">
     <a href='http://localhost:4000/' className="logo"> <img src="/LOGO.ico" style={{width: "200px"}}  alt="Portfolio Logo" /></a>      
-   <div className='navbar'>
-     <NavBar  />  
-   </div>
-   <div className='nav_f_b'>
-     <NavigationButtons />
-   </div>
+      <div className='navbar'>
+        <NavBar  />  
+      </div>
+      <div className='nav_f_b'>
+        <NavigationButtons />
+      </div>
  </div>
   )
 }

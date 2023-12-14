@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import ApplicationCard from './general/ApplicationCard';
 import { useParams } from 'react-router-dom';
 import { AppContext } from './contexts/AppContext';
 
@@ -9,16 +10,10 @@ const ApplicationPage = () => {
     
     const everyApp = allApps.map(app => (
         <div key={app.id}>
-          <h1>{app.name}</h1>
-          <p>{app.description}</p>
-          <div>
-            <a href={app.link} target="_blank" rel="noopener noreferrer">LINK TO APP</a>
-          </div>
-          <div>
-            <a href={app.demo} target="_blank" rel="noopener noreferrer">DEMO</a>
-          </div>
+          <ApplicationCard/>    
         </div>
       ));
+
 console.log(everyApp)
   return (
       <div className="full-height-page">
