@@ -9,7 +9,7 @@ const ApplicationCard = ({ app }) => {
         console.error("ApplicationCard: 'app' is undefined");
         return null;
       }
-      
+
   return (
     <div key={app.id}>
       <Card style={{ width: '18rem' }}>

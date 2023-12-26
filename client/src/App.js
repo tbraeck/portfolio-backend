@@ -13,10 +13,10 @@ const App = () => {
   
   return (
     <div className="App">
-            <div className='mainContainer'>
-       <div className="header">
+      <div className='mainContainer'>
+          <div className="header">
             <Header/>
-        </div>
+          </div>
       <div>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
@@ -27,8 +27,10 @@ const App = () => {
 
         </Routes>
       </div>
-      <Footer/>
-    </div>
+      <div className='footer--pin'>
+              <Footer/>
+        </div>
+      </div>
     </div>
   )
 }

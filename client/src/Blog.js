@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 const Blog = () => {
   const [feedData, setFeedData] = useState([]);
 
-  useEffect(() => {
-    // Fetch the RSS feed
-    fetch('/api/rss-feed') // Replace with the actual endpoint
-      .then((response) => response.json())
-      .then((data) => setFeedData(data.items)); // Adjust based on your feed structure
-  }, []);
+  // useEffect(() => {
+  //   // Fetch the RSS feed
+  //   fetch('/api/rss-feed') // Replace with the actual endpoint
+  //     .then((response) => response.json())
+  //     .then((data) => setFeedData(data.items)); // Adjust based on your feed structure
+  // }, []);
 
   return (
     <div>
