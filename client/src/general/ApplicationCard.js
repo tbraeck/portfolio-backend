@@ -1,38 +1,31 @@
-import React, { useContext, useState } from 'react';
-import { Link} from 'react-router-dom'
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { AppContext } from '../contexts/AppContext';
+import { Link } from 'react-router-dom';
 
-const ApplicationCard = () => {
-    const {allApps, setAllApps} = useContext(AppContext)
+const ApplicationCard = ({ app }) => {
 
-
+    if (!app) {
+        console.error("ApplicationCard: 'app' is undefined");
+        return null;
+      }
+      
   return (
-    <div>
-    
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={allApps.image} />
-      <Card.Body>
-        <Card.Title>{allApps.name}</Card.Title>
-        <Card.Text>
-          {allApps.description}
-        </Card.Text>
-        <Card.Text>
-            <Link>
-                {allApps.link}
-            </Link>
-        </Card.Text>
-        <Card.Text>
-            <Link>
-                {allApps.demo}
-            </Link>
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  </div>
-  )
+    <div key={app.id}>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={app.image} />
+        <Card.Body>
+          <Card.Title>{app.name}</Card.Title>
+          <Card.Text>{app.description}</Card.Text>
+          <Card.Text>{app.link}</Card.Text>
+          <Card.Text>{app.demo}</Card.Text>
+          <Link to={`/apps/${app.id}`}>
+            <Button variant="primary">GO TO: {app.name}</Button>
+          </Link>
+        </Card.Body>
+      </Card>
+    </div>
+  );
 }
 
-export default ApplicationCard
+export default ApplicationCard;

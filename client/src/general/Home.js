@@ -1,16 +1,17 @@
 import React, {useContext} from 'react';
 import { Link} from 'react-router-dom';
 import { AppContext } from '../contexts/AppContext.js';
-import ApplicationPage from '../ApplicationPage.js';
+// import ApplicationPage from '../ApplicationPage.js';
+import ApplicationCard from './ApplicationCard.js';
+import ApplicationList from '../ApplicationList.js';
 
 const Home = () => {
-  const { allApps, setAllApps } = useContext(AppContext)
+  const { allApps } = useContext(AppContext)
   
   const theApps = allApps.map((app) => (
     <div key={app.id} className="forum-item">
           <Link to={`/apps/${app.id}`} className="link">
-            <h2>{app.name}</h2>
-            <img src={app.image} alt="app image"/>
+            <ApplicationList />
           </Link>
     </div>
   ));

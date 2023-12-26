@@ -1,10 +1,9 @@
 import React, {useContext} from 'react';
-import { Link, useNavigate } from 'react-router-dom'
-import { AppContext } from '../contexts/AppContext';
-import NavigationButtons from './NavigationButtons';
+import { Link } from 'react-router-dom'
+// import { AppContext } from '../contexts/AppContext';
+
 const NavBar = () => {
-const navigate = useNavigate();
-const {allApps, setAllApps} = useContext(AppContext)
+// const {allApps, setAllApps} = useContext(AppContext)
 
 // const handleLogout = ()=> {
 //   setUser(null)

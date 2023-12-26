@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <h1 className='footer'>footer is here</h1>
-    </div>
+    <footer className='footer'>
+      <p>&copy; {new Date().getFullYear()} Tate Braeckel Portfolio</p>
+    </footer>
   )
 }
 

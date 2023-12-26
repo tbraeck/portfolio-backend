@@ -5,7 +5,7 @@ const NavigationButtons = () => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
-    navigate(-1); // Go back one step
+    navigate(-1); 
   };
 
   const handleGoForward = () => {
