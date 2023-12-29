@@ -46,7 +46,18 @@ html, body {
     transform: rotate(360deg);
   }
 } */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
+.headerCont {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #4da4fc; 
+  color: white; 
+}
 .forum-container{
   display: flex;
   justify-content: center;
@@ -68,13 +79,7 @@ html, body {
   flex-direction: column;
   align-content: center;
 }
-.headerCont {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #4da4fc; 
-  color: white; 
-}
+
 .logo {
   max-width: 600px; 
   height: auto;
@@ -101,17 +106,17 @@ html, body {
   width: cover;
 }
 .header-link {
-  background-color: #b1aeae;
-  padding: 15px;
+  background-color: #b1aeae; 
+  padding: 15px; 
   border-radius: 15px;
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  margin: 5px;
+  color: #ffffff;   
+  text-decoration: none; 
+  display: inline-block; 
+  margin: 5px; 
 }
 
 .header-link:hover {
-  background-color: #f7f1f1;
+  background-color: #f7f1f1; 
 }
 
 .link {

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import Header from './general/Header'
 import Home from './general/Home';
 import ApplicationList from './ApplicationList';
@@ -7,7 +7,6 @@ import About from './About';
 import Footer from './general/Footer';
 import {Routes, Route} from 'react-router-dom';
 import ApplicationPage from './ApplicationPage';
-import ApplicationCard from './general/ApplicationCard';
 
 const App = () => {
   

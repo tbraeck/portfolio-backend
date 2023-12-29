@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState } from 'react';
 
 const Blog = () => {
-  const [feedData, setFeedData] = useState([]);
+  // const [feedData, setFeedData] = useState([]);
 
   // useEffect(() => {
   //   // Fetch the RSS feed
@@ -14,13 +14,13 @@ const Blog = () => {
     <div>
       <h1>Latest Blog Posts</h1>
       <ul>
-        {feedData.map((item) => (
+        {/* {feedData.map((item) => (
           <li key={item.guid}>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               {item.title}
             </a>
           </li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );

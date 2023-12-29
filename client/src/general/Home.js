@@ -1,11 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { Link} from 'react-router-dom';
-import { AppContext } from '../contexts/AppContext.js';
 // import ApplicationPage from '../ApplicationPage.js';
 import ApplicationList from '../ApplicationList.js';
 
 const Home = () => {
-  const { allApps } = useContext(AppContext)
   
   // const theApps = allApps.map((app) => (
   //   <div key={app.id} className="forum-item">
