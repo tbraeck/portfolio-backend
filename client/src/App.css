@@ -55,11 +55,12 @@ code {
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #4da4fc; 
+  background-color: #80e5fb; 
   color: white; 
 }
 .forum-container{
   display: flex;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   /* background-image: url('../public/background1.jpeg'); */
@@ -75,9 +76,11 @@ code {
 }
 
 .forum-list{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  margin-top: -100px;
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+  border-radius: 8px; 
+  padding: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
 .logo {
@@ -126,40 +129,42 @@ code {
 .mainPageItemsContainer {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  flex: 1;
+  justify-content: space-around; 
 }
 
 .category-column {
-  flex: 1;
+  flex: 0 0 calc(33.333% - 20px); /* Adjust the width as needed */
   margin: 0 10px;
-  max-width: 500px;
+  max-width: 300px;
   border: 1px solid #ccc;
   border-radius: 20px;
   box-shadow: 5px 10px #888888;
   padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+  margin-bottom: 20px;
   text-align: center;
   color: #b33e3e;
 }
+
+
 .button-image {
   width: 50px; 
   height: auto; 
-  margin-left: 70px; 
   transition: transform 0.3s; 
 }
+
 .full-height-page {
-  min-height: 100vh;
+  min-height: 70vh;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
 .full-width-page {
-  max-width: 1200px; /* Adjust as needed */
-  padding: 20px;
+  max-width: 300px; /* Adjust as needed */
+  padding: 0px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -189,4 +194,15 @@ code {
 .display-3,
 .display-6 {
   margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.application-card {
+  width: 300px; 
+  margin: 0 10px 20px;
 }

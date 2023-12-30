@@ -15,7 +15,6 @@ function AppProvider({ children }) {
 
   }, [])
 
-  console.log(allApps)
   return (
     <AppContext.Provider value={{ allApps, setAllApps }}>
       {children}

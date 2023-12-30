@@ -21,7 +21,7 @@ const Home = () => {
       <div className="content">
         <div className="header-box">
           <div className="mainPageItemsContainer" key="mainPageItemsContainer">
-          <div className="category-column" >
+          <div className="card-item" >
               <Link to={`/applications`} className="link header-link">
                 <h1 className='category-column-h1'>APPLICATIONS</h1>
               </Link>

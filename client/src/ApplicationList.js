@@ -6,21 +6,18 @@ import { AppContext } from './contexts/AppContext';
 const ApplicationList = () => {
     const {allApps} = useContext(AppContext)
    
-    console.log(allApps)
     const everyApp = allApps.map(app => (
-        <div key={app.id}>
-          <Link to={`/apps/${app.id}`} className="link">
-            <ApplicationCard app={app}/>  
-          </Link>  
-        </div>
+      <div key={app.id} className="card-item">
+      <Link to={`/apps/${app.id}`} className="link">
+        <ApplicationCard app={app} />
+      </Link>
+    </div>
       ));
 
   return (
-    <div className="forum-container">
-    <div className="forum-list">
-      {everyApp}
+    <div className="card-container">
+            {everyApp}
     </div>
-  </div>  
   )
 }
 

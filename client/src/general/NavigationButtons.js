@@ -18,7 +18,7 @@ const NavigationButtons = () => {
         <img src='/1.png' style={{width: "60px"}} alt='Go Back' className="button-image" />
       </button>
       <button className="nav-button" onClick={handleGoForward}>
-        <img src='/2.png'style={{width: "60px"}} alt='Go Forward' className="button-image" />
+        <img src='/2.png'style={{width: "60px", }} alt='Go Forward' className="button-image" />
       </button>
     </div>
   );

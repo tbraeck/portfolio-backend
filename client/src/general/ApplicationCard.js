@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
-const ApplicationCard = ({ app }) => {
+const ApplicationCard = ({ app, className }) => {
 
     if (!app) {
         console.error("ApplicationCard: 'app' is undefined");
@@ -12,7 +12,7 @@ const ApplicationCard = ({ app }) => {
 
   return (
     <div key={app.id}>
-      <Card style={{ width: '18rem' }}>
+      <Card className={className}  style={{ width: '18rem' }}>
         <Card.Img variant="top" src={app.image} />
         <Card.Body>
           <Card.Title>{app.name}</Card.Title>

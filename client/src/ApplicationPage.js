@@ -15,13 +15,7 @@ const ApplicationPage = () => {
 
   return (
     <div className="full-height-page">
-      <div className="full-width-page">
-        {/* <h1 className="pageTitle">{selectedApp.name}</h1>
-        <p className="pageDescription">Description: {selectedApp.description}</p>
-        <p className="pageDescription">LINK: {selectedApp.link}</p>
-        <p className="pageDescription">DEMO: {selectedApp.demo}</p>
-        <img className='thumbImg' src={selectedApp.image} alt="Free Stuff" /> */}
-        <Card style={{ width: '112rem', alignItems: "center" }}>
+        <Card style={{ width: '28rem', margin: '0 auto' }}>
         <Card.Img style={{width: "18rem"}} variant="top" src={selectedApp.image} />
         <Card.Body>
           <Card.Title>{selectedApp.name}</Card.Title>
@@ -34,7 +28,6 @@ const ApplicationPage = () => {
         </Card.Body>
       </Card>
       </div>
-    </div> 
   )
 }
 
