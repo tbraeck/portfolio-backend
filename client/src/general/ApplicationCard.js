@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
@@ -15,13 +14,12 @@ const ApplicationCard = ({ app, className }) => {
       <Card className={className}  style={{ width: '18rem' }}>
         <Card.Img variant="top" src={app.image} />
         <Card.Body>
-          <Card.Title>{app.name}</Card.Title>
+          <Card.Title>{app.name.toUpperCase()}</Card.Title>
           <Card.Text>{app.description}</Card.Text>
-          <Card.Text>{app.link}</Card.Text>
-          <Card.Text>{app.demo}</Card.Text>
-          <Link to={`/apps/${app.id}`}>
-            <Button variant="primary">GO TO: {app.name}</Button>
+          <Link to={app.link} target="_blank" rel="noopener noreferrer">
+            {app.name.toUpperCase()} GITHUB
           </Link>
+          <Card.Text>{app.demo}</Card.Text>
         </Card.Body>
       </Card>
     </div>

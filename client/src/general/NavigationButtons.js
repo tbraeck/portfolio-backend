@@ -13,12 +13,14 @@ const NavigationButtons = () => {
   };
 
   return (
-    <div>
-      <button className="nav-button"  onClick={handleGoBack}>
-        <img src='/1.png' style={{width: "60px"}} alt='Go Back' className="button-image" />
+    <div style={{marginRight: "100px"}}>
+      <button className="button-image" style={{fontSize: "50px", backgroundColor: "#80e5fb", border: "none", }} onClick={handleGoBack}>
+      ◀
+        {/* <img src='/6.png' style={{width: "60px"}} alt='Go Back' className="button-image" /> */}
       </button>
-      <button className="nav-button" onClick={handleGoForward}>
-        <img src='/2.png'style={{width: "60px", }} alt='Go Forward' className="button-image" />
+      <button className="button-image" style={{fontSize: "50px", backgroundColor: "#80e5fb", border: "none"}} onClick={handleGoForward}>
+      ▶
+        {/* <img src='/5.png'style={{width: "60px", }} alt='Go Forward' className="button-image" /> */}
       </button>
     </div>
   );

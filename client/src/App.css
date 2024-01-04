@@ -63,7 +63,7 @@ code {
   /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-  /* background-image: url('../public/background1.jpeg'); */
+  background-image: url('../public/fire.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; 
@@ -125,12 +125,22 @@ code {
 .link {
   text-decoration: none;
 }
+.background-image{
+  background-image: url('../public/fire.jpeg');
 
+}
 .mainPageItemsContainer {
   margin-top: 30px;
   display: flex;
   flex: 1;
   justify-content: space-around; 
+}
+
+.card-item{
+  display: flex;
+  flex-direction: column
+  ;
+  justify-content: right;
 }
 
 .category-column {
@@ -146,9 +156,12 @@ code {
   color: #b33e3e;
 }
 
+.category-column{
+align-content: center;
+}
 
-.button-image {
-  width: 50px; 
+.button-image { 
+  width: 150px; 
   height: auto; 
   transition: transform 0.3s; 
 }
@@ -177,8 +190,17 @@ code {
   text-align: center;
   margin-top: auto;
 }
+
 .home {
   position: relative;
+  background-image: url('../public/fire.jpeg');
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  background-position: left ; 
+  width: 100%;
+  /* height: 100vh; */
+  z-index: 1;
+  /* opacity: 0.7; */
   height: 90vh;
 }
 
