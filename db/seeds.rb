@@ -12,23 +12,22 @@ puts "🥷👩‍🦰 Seeding apps!"
 App.create!([
     {
      name: "Barter Barn",
-    description: "This app was created for communities to be able to easily access a bartering system for goods and services.
-    ",
+    description: "Barter Barn is a forum-style app that encourages community bartering of services and goods.",
     link: "https://github.com/tbraeck/barter_barn_v2",
     demo: "https://youtu.be/H4KahrCLvLM"
     },
     {
         name: "Teach Source",
-       description: "This app was created to be a resource database for all educators to access for their instructional needs.
+       description: "Teach Source was created to be a resource database for all educators to access for their instructional needs.
        ",
        link: "https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main",
        demo: "https://youtu.be/KeARm1YrWls"
        },
        {
-        name: "Barter Barn",
-       description: "flibbity",
-       link: "doggie",
-       demo: "diggity"
+        name: "ART RANDOMIZER",
+       description: "Drawing Ideas Now was created to inspire every artist or budding artist for drawing or creative ideas.",
+       link: "https://github.com/tbraeck/PHASE4_PROJECT",
+       demo: "https://youtu.be/b4JDXWqOegs"
        },
 ])
 

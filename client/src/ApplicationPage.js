@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from './contexts/AppContext';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
 const ApplicationPage = () => {
@@ -20,11 +21,13 @@ const ApplicationPage = () => {
         <Card.Body>
           <Card.Title>{selectedApp.name}</Card.Title>
           <Card.Text>{selectedApp.description}</Card.Text>
-          <Card.Text>{selectedApp.link}</Card.Text>
-          <Card.Text>{selectedApp.demo}</Card.Text>
-          {/* <Link to={`/apps/${selectedApp.id}`}>
-            <Button variant="primary">GO TO: {selectedApp.name}</Button>
-          </Link> */}
+          <Link to={selectedApp.link} target="_blank" rel="noopener noreferrer">
+            {selectedApp.name.toUpperCase()} GITHUB
+          </Link>
+          <Link to={selectedApp.demo} target="_blank" rel="noopener noreferrer">
+            {selectedApp.name.toUpperCase()} DEMO
+          </Link>
+         
         </Card.Body>
       </Card>
       </div>

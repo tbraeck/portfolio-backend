@@ -8,14 +8,15 @@ const ApplicationList = () => {
    
     const everyApp = allApps.map(app => (
       <div key={app.id} className="card-item">
+       <ApplicationCard app={app} />
       <Link to={`/apps/${app.id}`} className="link">
-        <ApplicationCard app={app} />
+       
       </Link>
     </div>
       ));
 
   return (
-    <div className="card-container">
+    <div className="card-container" >
             {everyApp}
     </div>
   )
