@@ -11,10 +11,12 @@ const ApplicationCard = ({ app, className }) => {
 
   return (
     <div key={app.id} >
-      <Card className={className}  style={{ width: '18rem', height: "550px" }}>
+      <Card className={className}  style={{ width: '18rem', height: "450px" }}>
         <Card.Img variant="top" src={app.image} />
         <Card.Body>
-          <Card.Title>{app.name.toUpperCase()}</Card.Title>
+          <Link to={`/apps/${app.id}`} >
+        {app.name.toUpperCase()}
+          </Link>
           <Card.Text>{app.description}</Card.Text>
           <Link to={app.link} target="_blank" rel="noopener noreferrer">
            GITHUB

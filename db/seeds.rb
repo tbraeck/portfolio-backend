@@ -36,3 +36,5 @@ App.all.each do |app|
     image = File.open(image_file_path)
     app.main_image.attach(io: image, filename: 'logo192.png')
   end
+
+  

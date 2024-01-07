@@ -16,14 +16,15 @@ const ApplicationPage = () => {
 
   return (
     <div className="full-height-page">
-        <Card style={{ width: '28rem', margin: '0 auto' }}>
-        <Card.Img style={{width: "18rem"}} variant="top" src={selectedApp.image} />
+        <Card >
+        <Card.Img style={{width: "48rem", left: "2rem"}} variant="top" src={selectedApp.image} />
         <Card.Body>
           <Card.Title>{selectedApp.name}</Card.Title>
           <Card.Text>{selectedApp.description}</Card.Text>
           <Link to={selectedApp.link} target="_blank" rel="noopener noreferrer">
             {selectedApp.name.toUpperCase()} GITHUB
           </Link>
+          <br></br>
           <Link to={selectedApp.demo} target="_blank" rel="noopener noreferrer">
             {selectedApp.name.toUpperCase()} DEMO
           </Link>

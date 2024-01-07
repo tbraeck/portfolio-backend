@@ -1,150 +1,100 @@
-/* .App {
-  text-align: center;
-
-} */
-
-html, body {
+/* Reset default styles */
+body, html {
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Base styling for the entire app */
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+/* Header container styling */
 .headerCont {
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #80e5fb; 
-  color: white; 
+  background-color: #80e5fb;
+  color: white;
+  margin-bottom: 20px;
 }
-.forum-container{
+
+/* Forum container styling */
+.forum-container {
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   background-image: url('../public/fire.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top; 
-  position: relative; 
+  background-position: center top;
+  position: relative;
   width: 100%;
   height: 100vh;
   z-index: 1;
   opacity: 0.7;
-
 }
 
-.forum-list{
+/* Forum list styling */
+.forum-list {
   margin-top: -100px;
-  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
-  border-radius: 8px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
   padding: 70px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  max-width: 600px; 
-  height: auto;
-}
-
+/* Navbar styling */
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+/* Floating the right-aligned items to the right */
 .nav_f_b {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.header{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.headerback{
-  width: cover;
-}
+/* Styling for links in header */
 .header-link {
-  background-color: #b1aeae; 
-  padding: 15px; 
+  background-color: #b1aeae;
+  padding: 15px;
   border-radius: 15px;
-  color: #ffffff;   
-  text-decoration: none; 
-  display: inline-block; 
-  margin: 5px; 
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
 }
 
 .header-link:hover {
-  background-color: #f7f1f1; 
+  background-color: #f7f1f1;
 }
 
-.link {
-  text-decoration: none;
-}
-.background-image{
-  background-image: url('../public/fire.jpeg');
-
-}
+/* Main page items container styling */
 .mainPageItemsContainer {
   margin-top: 30px;
   display: flex;
-  flex: 1;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
-.card-item{
+/* Card item styling */
+.card-item {
   display: flex;
-  flex-direction: column
-  ;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: right; /* Check if you really need this */
 }
 
+/* Category column styling */
 .category-column {
-  flex: 0 0 calc(33.333% - 20px); /* Adjust the width as needed */
+  flex: 0 0 calc(33.333% - 20px);
   margin: 0 10px;
   max-width: 300px;
   border: 1px solid #ccc;
@@ -156,75 +106,88 @@ code {
   color: #b33e3e;
 }
 
-.category-column{
-align-content: center;
-}
-
-.button-image { 
-  width: 150px; 
-  height: auto; 
-  transition: transform 0.3s; 
-}
-
-.full-height-page {
-  height: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-}
-
+/* Full-width page styling */
 .full-width-page {
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px;
   padding: 0px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Full-height page styling */
+.full-height-page {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer styling */
 .footer {
-  background-color: #333; 
-  color: #fff; 
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
   margin-top: auto;
 }
 
+/* Footer pin styling */
+.footer-pin {
+  margin-top: auto;
+}
+
+/* Home section styling */
 .home {
   position: relative;
   background-image: url('../public/fire.jpeg');
   background-repeat: no-repeat;
   background-size: 70vh;
-  background-position: left ; 
+  background-position: left;
   width: 100%;
-  /* height: 100vh; */
   z-index: 1;
-  /* opacity: 0.7; */
-  height: 100vh;
+  height: 100vh; /* Make sure the home section covers the entire viewport */
 }
 
+/* About container styling */
 .aboutContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center; /* Add this line to center text */
-  height: 100vh;
+  padding: 20px;
 }
 
-.display-3,
-.display-6 {
-  margin-bottom: 20px;
+/* Responsive font sizes for different sections */
+.display-4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
+.display-5 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.display-7 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Card container styling */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 90px;
 }
 
+/* Application card styling */
 .application-card {
-  width: 300px; 
+  width: 300px;
   margin: 0 10px 20px;
+  /* Add more styles as needed */
 }
+
+/* Add more specific styling rules as needed for different components */
