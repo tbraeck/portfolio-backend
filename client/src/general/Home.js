@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-// import ApplicationPage from '../ApplicationPage.js';
 import ApplicationList from '../ApplicationList.js';
 
 const Home = () => {
