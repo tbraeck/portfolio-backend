@@ -11,8 +11,10 @@ const Blog = () => {
   // }, []);
 
   return (
-    <div>
-      <h1>Latest Blog Posts</h1>
+    <div style={{alignItems: "center"}}>
+      {/* <h1>Latest Blog Posts</h1> */}
+      <h1>BLOGS UNDER CONSTRUCTION</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="under_construction" />
       <ul>
         {/* {feedData.map((item) => (
           <li key={item.guid}>

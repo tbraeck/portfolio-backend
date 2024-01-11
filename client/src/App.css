@@ -53,7 +53,8 @@ body, html {
 .navbar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left ;
+  margin-left: 0px;
 }
 
 /* Floating the right-aligned items to the right */
@@ -224,7 +225,7 @@ border-radius: 20px;
 /* Application card styling */
 .application-card {
   width: 300px;
-  margin: 0 10px 20px;
+  /* margin: 0 10px 20px; */
   /* Add more styles as needed */
 }
 
