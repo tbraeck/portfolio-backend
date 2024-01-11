@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import { Link } from 'react-router-dom';
 
 const ApplicationCard = ({ app, className }) => {
@@ -9,14 +11,37 @@ const ApplicationCard = ({ app, className }) => {
         return null;
       }
 
+      
   return (
     <div key={app.id} >
-      <Card className={className}  style={{ width: '18rem', height: "450px" }}>
-        <Card.Img variant="top" src={app.image} />
+      <Card className={className}  style={{ width: '18rem', height: "450px", margin: "30px" }}>
+      <Link to={`/apps/${app.id}`} >
+                    <Card.Img 
+                    variant="top" 
+                    src={app.image} 
+                    className="hover-zoom"  />
+                </Link>
+
         <Card.Body>
-          <Link to={`/apps/${app.id}`} >
-        {app.name.toUpperCase()}
-          </Link>
+    <div>
+            <Popup trigger=
+                { <h3 >
+                {app.name.toUpperCase()}
+                  </h3>}
+                position="right center">
+                <div>
+                 <ul>
+                  <li>
+                    {app.name.toUpperCase()}
+                  </li>
+                  <li>
+                    {app.description.toUpperCase()}
+                  </li>
+                 </ul>
+                </div>
+            </Popup>
+        </div>
+         
           <Card.Text>{app.description}</Card.Text>
           <Link to={app.link} target="_blank" rel="noopener noreferrer">
            GITHUB

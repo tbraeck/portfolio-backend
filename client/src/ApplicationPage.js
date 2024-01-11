@@ -22,11 +22,11 @@ const ApplicationPage = () => {
           <Card.Title>{selectedApp.name}</Card.Title>
           <Card.Text>{selectedApp.description}</Card.Text>
           <Link to={selectedApp.link} target="_blank" rel="noopener noreferrer">
-            {selectedApp.name.toUpperCase()} GITHUB
+             GITHUB
           </Link>
           <br></br>
           <Link to={selectedApp.demo} target="_blank" rel="noopener noreferrer">
-            {selectedApp.name.toUpperCase()} DEMO
+            DEMO
           </Link>
          
         </Card.Body>

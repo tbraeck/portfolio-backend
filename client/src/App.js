@@ -8,6 +8,7 @@ import Footer from './general/Footer';
 import {Routes, Route} from 'react-router-dom';
 import ApplicationPage from './ApplicationPage';
 
+
 const App = () => {
   
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <div className="header">
             <Header/>
           </div>
+          
       <div>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
