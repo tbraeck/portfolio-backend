@@ -12,7 +12,7 @@ const ApplicationCard = ({ app, className }) => {
 
   return (
     <div key={app.id}>
-      <Card className={className} style={{ width: '18rem', height: '450px', margin: '5px' }}>
+      <Card className={className} style={{ width: '18rem', height: '375px', margin: '5px' }}>
         <Card.Body>
           <div>
             <Popup
