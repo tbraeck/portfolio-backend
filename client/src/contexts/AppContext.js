@@ -22,7 +22,7 @@ function AppProvider({ children }) {
           "description": "Teach Source was created to be a resource database for all educators to access for their instructional needs.",
           "link": "https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main",
           "demo": "https://youtu.be/KeARm1YrWls",
-          "image": "../drawingIdeas.png"
+          "image": "../teachSource.png"
         },
         {
           "id": 3,
@@ -30,7 +30,7 @@ function AppProvider({ children }) {
           "description": "Drawing Ideas Now was created to inspire every artist or budding artist for drawing or creative ideas.",
           "link": "https://github.com/tbraeck/PHASE4_PROJECT",
           "demo": "https://youtu.be/b4JDXWqOegs",
-          "image": "../teachSource.png"
+          "image": "../drawingIdeas.png" 
          
         }
       ]);
