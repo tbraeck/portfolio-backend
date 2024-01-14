@@ -128,7 +128,7 @@ body, html {
 
 /* Full-height page styling */
 .full-height-page {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,11 +154,12 @@ body, html {
   position: relative;
   background-image: url('../public/fire.jpeg');
   background-repeat: no-repeat;
-  background-size: 70vh;
+  background-size: 50vh;
   background-position: left;
+  background-position-x: 10%;
   width: 100%;
   z-index: 1;
-  height: 100vh; /* Make sure the home section covers the entire viewport */
+  height: 65vh; /* Make sure the home section covers the entire viewport */
 }
 
 /* About container styling */

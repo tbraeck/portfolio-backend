@@ -16,7 +16,7 @@ const ApplicationPage = () => {
 
   return (
     <div className="full-height-page">
-        <Card >
+        <Card style={{marginTop: "0px"}}>
         <Card.Img style={{width: "48rem", left: "2rem"}} variant="top" src={selectedApp.image} />
         <Card.Body>
           <Card.Title>{selectedApp.name}</Card.Title>
