@@ -12,6 +12,7 @@ const ApplicationCard = ({ app, className }) => {
     return null;
   }
 
+  console.log(app)
   return (
     <div key={app.id}>
       <Card className={className} style={{ width: '18rem', height: '375px', margin: '5px' }}>
