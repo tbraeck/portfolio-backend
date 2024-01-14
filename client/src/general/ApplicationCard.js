@@ -4,7 +4,9 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { Link } from 'react-router-dom';
 
+
 const ApplicationCard = ({ app, className }) => {
+
   if (!app) {
     console.error("ApplicationCard: 'app' is undefined");
     return null;
