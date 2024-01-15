@@ -50,7 +50,8 @@ body, html {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar styling */
+
+
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -62,7 +63,7 @@ body, html {
 /* Floating the right-aligned items to the right */
 .nav_f_b {
   display: flex;
-  align-items: left ;
+  align-items: left;
   width: 50%;
   margin-left: 150px;
   margin-right: 20px; /* Adjust this value to move the right-aligned items to the left */
@@ -78,6 +79,7 @@ body, html {
   text-decoration: none;
   display: inline-block;
   margin: 5px;
+  margin-right: 20px; /* Adjust this value to increase space between buttons */
 }
 
 .header-link:hover {
