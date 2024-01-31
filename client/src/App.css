@@ -30,7 +30,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../public/fire.jpeg');
+  background-image: url('../public/ME.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -57,7 +57,8 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding-left: 20px; /* Adjust this value to move the entire navbar to the right */
+  padding-left: 220px;
+  margin-bottom: 20px;
 }
 
 /* Floating the right-aligned items to the right */
@@ -154,14 +155,14 @@ body, html {
 /* Home section styling */
 .home {
   position: relative;
-  background-image: url('../public/fire.jpeg');
+  background-image: url('../public/ME.jpeg');
   background-repeat: no-repeat;
   background-size: 50vh;
   background-position: left;
   background-position-x: 10%;
   width: 100%;
   z-index: 1;
-  height: 65vh; /* Make sure the home section covers the entire viewport */
+  height: 70vh; /* Make sure the home section covers the entire viewport */
 }
 
 /* About container styling */

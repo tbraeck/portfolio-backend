@@ -12,7 +12,7 @@ const Home = () => {
       <div className="content">
         <div className="header-box">
           <div className="mainPageItemsContainer" key="mainPageItemsContainer" >
-            <div className="card-item" style={{ marginLeft: 'auto', marginRight: '120px', maxWidth: "900px" }}>
+            <div className="card-item" style={{ marginLeft: 'auto', marginRight: '220px', maxWidth: "900px" }}>
               <Link to={`/applications`} className="link header-link">
                 <h1 className='category-column-h1' style={{ textAlign: 'center', marginBottom: "0px" }}>APPLICATIONS</h1>
               </Link>
