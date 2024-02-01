@@ -22,7 +22,7 @@ const NavBar = () => {
 // }
 
 return (
-  <div className='headerBack' style={{ marginLeft: "100px" }}>
+  <div className='headerBack' style={{ marginLeft: "50px" }}>
     <div className="btn" style={{ display: 'flex', justifyContent: 'center' }}>
       <Link to="/" className='btn'>
         <button className='btn btn-secondary' type='button'>
