@@ -7,6 +7,15 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.changa-font {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
 /* Base styling for the entire app */
 .App {
   display: flex;
@@ -30,7 +39,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../public/ME.jpeg');
+  /* background-image: url('../public/ME.jpeg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -155,7 +164,7 @@ body, html {
 /* Home section styling */
 .home {
   position: relative;
-  background-image: url('../public/ME.jpeg');
+  /* background-image: url('../public/ME.jpeg'); */
   background-repeat: no-repeat;
   background-size: 50vh;
   background-position: left;
