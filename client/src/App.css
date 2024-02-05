@@ -29,7 +29,7 @@ body, html {
   align-items: center;
   height: 240px;
   /* padding: 20px; */
-  background-color: #e3e1e1;
+  /* background-color: #e3e1e1; */
   color: white;
   /* margin-bottom: 20px; */
 }
@@ -82,10 +82,10 @@ body, html {
 
 /* Styling for links in header */
 .header-link {
-  background-color: #b1aeae;
+  /* background-color: #b1aeae; */
   padding: 15px;
   border-radius: 15px;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-decoration: none;
   display: inline-block;
   margin: 5px;
@@ -98,7 +98,7 @@ body, html {
 
 /* Main page items container styling */
 .mainPageItemsContainer {
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-around;
 }
@@ -164,14 +164,14 @@ body, html {
 /* Home section styling */
 .home {
   position: relative;
-  /* background-image: url('../public/ME.jpeg'); */
+  background-image: url('../public/background.png');
   background-repeat: no-repeat;
-  background-size: 50vh;
+  background-size: cover;
   background-position: left;
-  background-position-x: 10%;
+  /* background-position-x: 10%; */
   width: 100%;
   z-index: 1;
-  height: 70vh; /* Make sure the home section covers the entire viewport */
+  height: 100vh; /* Make sure the home section covers the entire viewport */
 }
 
 /* About container styling */

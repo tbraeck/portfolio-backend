@@ -14,9 +14,9 @@ const App = () => {
   return (
     <div className="App">
       <div className='mainContainer'>
-          <div className="header">
+          {/* <div className="header">
             <Header/>
-          </div>
+          </div> */}
           
       <div>
         <Routes>
