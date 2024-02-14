@@ -8,11 +8,21 @@ body, html {
 }
 
 
+.changa-font {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* margin-left: 350px; */
+  font-size: 100px;
+}
+
 .changa-font1 {
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-left: 350px;
   font-size: 100px;
 }
 .changa-font2 {
@@ -21,6 +31,8 @@ body, html {
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
+  margin-left: 0px;
+
 }
 .changa-font3 {
   font-family: "Changa", sans-serif;
@@ -28,6 +40,8 @@ body, html {
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
+  margin-right: 230px;
+
 }
 
 /* Base styling for the entire app */
@@ -40,12 +54,14 @@ body, html {
 .header {
   text-align: center;
   margin-top: 20px;
-}
+margin-right: 300px;}
 /* Header container styling */
 .headerCont {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: bottom left;
   height: 240px;
+  margin-left: -450px;
   /* padding: 20px; */
   /* background-color: #e3e1e1; */
   color: white;
@@ -86,13 +102,17 @@ display: flex;
 /* Navbar styling */
 .navbar {
   display: flex;
+  align-items: left;
+  justify-content: left;
   flex-direction: column;
+  z-index: 2;
   /* align-items: left;
   padding-left: 160px;
   margin-bottom: 20px; */
   position: fixed; /* Set the navbar to fixed position */
   bottom: 0; /* Position the navbar at the bottom of the page */
   width: 60%; 
+  
 }
 
 /* Floating the right-aligned items to the right */
@@ -128,6 +148,7 @@ display: flex;
 }
 
     .logo {
+      margin-left: 600px;
       transition: all .2s ease-in-out; 
       margin-bottom: 20px;
     }
@@ -192,9 +213,10 @@ display: flex;
 
 /* Footer styling */
 .footer {
-  position: fixed;
+  position: relative ;
   left: 0;
   bottom: 0;
+  z-index: 6;
   width: 100%;
   background-color: #333;
   color: #fff;
@@ -208,12 +230,13 @@ display: flex;
 }
 
 .homeContainer {
-  background-image: url('../public/background.png');
+  background-image: url('../public/background1.png');
   background-repeat: no-repeat;
   background-size: 100vw;
-  background-position: left;
+  background-position: top left; /* Adjusted position */
   display: flex;
-  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100vw;
   justify-content: center;
   height: 300vh;
 }
@@ -252,7 +275,7 @@ display: flex;
 /* About.css */
 .aboutContainer {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   min-height: 50vh;
   margin-top: 50px;
@@ -260,6 +283,8 @@ display: flex;
 
 .aboutContent {
   max-width: 700px;
+  margin-top: 60px;
+  justify-content: left;
   text-align: center;
   padding: 20px;
 }

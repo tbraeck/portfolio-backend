@@ -12,6 +12,7 @@ const About = () => {
     return (
         <div className='aboutContainer'>
             <div className='aboutContent'>
+                <h1 className='changa-font'>SOME THINGS ABOUT ME</h1>
                 <h1 className='display-4'>TATE BRAECKEL:</h1>
                 <h2 className='display-5'>FullStack Web Developer</h2>
                 <p className='display-7'>
