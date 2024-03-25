@@ -3,6 +3,7 @@ import Header from './general/Header'
 import Home from './general/Home';
 import ApplicationList from './ApplicationList';
 import Blog from './Blog';
+import Developer from './general/Developer';
 import About from './About';
 import Footer from './general/Footer';
 import {Routes, Route} from 'react-router-dom';
@@ -22,6 +23,9 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route  path='/about' element={<About />}/>
+          <Route path='/developer' element={<Developer />}/>
+          <Route path='/designer' element={<Developer />}/>
+          <Route path='/creator' element={<Developer />}/>
           <Route  path='/applications' element={<ApplicationList/>}/>
           <Route path="/apps/:id" element={<ApplicationPage  />}/> 
           <Route  path='/blog' element={<Blog />}/>

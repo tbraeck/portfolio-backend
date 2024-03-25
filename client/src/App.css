@@ -237,6 +237,7 @@ flex-direction: column;
   background-image: url('../public/background1.png');
   background-repeat: no-repeat;
   background-size: 100vw;
+  color: rgb(235, 21, 157);
   background-position: top left; /* Adjusted position */
   display: flex;
   /* justify-content: center; */
@@ -285,7 +286,7 @@ flex-direction: column;
   background-position: left;
   width: 100%; /* Make sure the container spans the full width */
   z-index: 1;
-  height: 90vh; /* Adjust height as needed */
+  height: 100vh; /* Adjust height as needed */
   /* justify-content: left; */
   align-items: left;
   padding-left: 60px;
@@ -293,13 +294,13 @@ flex-direction: column;
   padding-bottom: 150px;
   background-color: #d4d4dc;
   /* min-height: 50vh; */
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 
 .aboutContent {
   max-width: 700px;
-  margin-top: 60px;
+  margin-top: 0px;
   justify-content: left;
   text-align: center;
   padding: 20px;
@@ -368,3 +369,41 @@ border-radius: 20px;
   transition: "transform 0.3s ease-in-out";
 }
 /* Add more specific styling rules as needed for different components */
+
+.devLink{
+  color: rgb(242, 19, 138);
+  text-decoration: none;
+  transition: all .2s ease-out; 
+}
+
+.devLink:hover { 
+  color: rgb(127, 255, 253);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+transform: scale(0.9); 
+}
+
+.desLink{
+  color: rgb(242, 19, 138);
+  text-decoration: none;
+  transition: all .2s ease-out; 
+}
+
+.desLink:hover { 
+  color: rgb(165, 255, 127);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+transform: scale(0.9); 
+}
+
+.creaLink{
+  color: rgb(242, 19, 138);
+  text-decoration: none;
+  transition: all .2s ease-out; 
+}
+.creaLink:hover { 
+  color: rgb(219, 127, 255);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+transform: scale(0.9); 
+}
