@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
 
-    const techSkills = [ "Javascript", "React", "Ruby", "Ruby on Rails", "SQL", "Backend Engineering", "Frontend Engineering", "FullStack Engineering" ]
+    const techSkills = [ "Javascript", "React", "Ruby", "Ruby on Rails", "SQL", "Backend Engineering", "Frontend Engineering", "FullStack Engineering", "Design", "UI/ UX" ]
     const skillsMap = techSkills.map((skill,index) => {
         return(
             <li key={index}>{skill}</li>
@@ -25,12 +25,11 @@ const About = () => {
             </div>
             <div className='techSKillsBox'>
             <h2 className='display-8'>
-                    Technical Skills:  
-                    </h2>
-                    <ul className='display-7'>
-                        {skillsMap}
-                    </ul>
-               
+                Technical Skills:  
+            </h2>
+                <ul className='display-7'>
+                    {skillsMap}
+                </ul>
             </div>
         </div>
     );

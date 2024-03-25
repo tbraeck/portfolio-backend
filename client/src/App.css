@@ -1,17 +1,17 @@
 /* Reset default styles */
 body, html {
-  height: 3 00%;
+  height: 180%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .changa-font {
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  color:  #4f5f76;
   font-style: normal;
   /* margin-left: 350px; */
   font-size: 100px;
@@ -22,9 +22,10 @@ body, html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-left: 350px;
+  margin-left: 460px;
   font-size: 100px;
 }
+
 .changa-font2 {
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
@@ -34,6 +35,7 @@ body, html {
   margin-left: 0px;
 
 }
+
 .changa-font3 {
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
@@ -148,7 +150,7 @@ display: flex;
 }
 
     .logo {
-      margin-left: 600px;
+      margin-left: 700px;
       transition: all .2s ease-in-out; 
       margin-bottom: 20px;
     }
@@ -180,6 +182,8 @@ display: flex;
 
 .mainContainer{
   align-content: center;
+display: flex;
+flex-direction: column;
 }
 
 .mainPageItemsContainer {
@@ -275,11 +279,23 @@ display: flex;
 /* About.css */
 .aboutContainer {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  min-height: 50vh;
-  margin-top: 50px;
+  /* background-image: url('../public/background3.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 100%; /* Make sure the container spans the full width */
+  z-index: 1;
+  height: 90vh; /* Adjust height as needed */
+  /* justify-content: left; */
+  align-items: left;
+  padding-left: 60px;
+  padding-right: 80px;
+  padding-bottom: 150px;
+  background-color: #d4d4dc;
+  /* min-height: 50vh; */
+  margin-top: 100px;
 }
+
 
 .aboutContent {
   max-width: 700px;
@@ -307,6 +323,7 @@ display: flex;
 
 .techSKillsBox{
   margin-left: 50px;
+  margin-top: 200px;
 }
 .display-8 {
   margin-left: 40px;

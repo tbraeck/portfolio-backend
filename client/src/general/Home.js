@@ -21,7 +21,7 @@ const Home = () => {
         <div className="header">
           <Header />
         </div>
-        <div>
+        <div style={{paddingBottom: "50px"}}>
           <About/>
         </div>
 
