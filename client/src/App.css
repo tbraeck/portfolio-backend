@@ -8,6 +8,8 @@ body, html {
 }
 
 .changa-font {
+  padding: 30 0 0 30;
+
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -18,6 +20,7 @@ body, html {
 }
 
 .changa-font1 {
+  padding: 30 0 0 30;
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -27,6 +30,7 @@ body, html {
 }
 
 .changa-font2 {
+  padding: 30 0 0 30;
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -164,7 +168,8 @@ display: flex;
 .card-item {
   display: flex;
   flex-direction: column;
-  justify-content: right; /* Check if you really need this */
+  justify-content: right; 
+ 
 }
 
 /* Category column styling */
@@ -186,6 +191,7 @@ display: flex;
   align-content: center;
 display: flex;
 flex-direction: column;
+/* height: 50vh; */
 }
 
 .mainPageItemsContainer {
@@ -193,7 +199,7 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
   background-image: url('../public/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,9 +331,12 @@ flex-direction: column;
 }
 
 .techSKillsBox{
-  margin-left: 50px;
-  margin-top: 200px;
+  /* margin-left: 50px;
+  margin-top: 170px; */
+  padding-left: 50px;
+  padding-top: 150px;
 }
+
 .display-8 {
   margin-left: 40px;
   font-size: 1.5rem;
@@ -357,6 +366,7 @@ border-radius: 20px;
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 90px;
+  /* max-height: 100vh; */
 }
 
 /* Application card styling */
@@ -408,4 +418,10 @@ transform: scale(0.9);
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
 transform: scale(1); 
+}
+
+.devPage{
+display: flex;
+flex-direction: column;
+
 }

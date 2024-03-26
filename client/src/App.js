@@ -17,11 +17,6 @@ const App = () => {
   return (
     <div className="App">
       <div className='mainContainer'>
-          {/* <div className="header">
-            <Header/>
-          </div> */}
-          
-      <div>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route  path='/about' element={<About />}/>
@@ -38,7 +33,6 @@ const App = () => {
               <Footer/>
         </div>
       </div>
-    </div>
   )
 }
 

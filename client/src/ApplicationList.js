@@ -16,9 +16,13 @@ const ApplicationList = () => {
       ));
 
   return (
-    <div className="card-container" >
-            {everyApp}
+    <div className='appList' style={{justifyContent: "center"}}>
+      <h1 >Development Examples</h1>
+      <div className="card-container" >
+        {everyApp}
+      </div>
     </div>
+   
   )
 }
 

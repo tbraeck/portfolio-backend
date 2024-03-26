@@ -1,11 +1,12 @@
 import React from 'react'
 import NavigationButtons from './NavigationButtons'
+import ApplicationList from '../ApplicationList'
 
 const Developer = () => {
   return (
-    <div>
-        <p>Here is the developer page</p>
+    <div className='devPage'>
         <NavigationButtons/>
+        <ApplicationList/>
     </div>
   )
 }
