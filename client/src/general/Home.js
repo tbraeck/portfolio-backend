@@ -28,7 +28,7 @@ const Home = () => {
           <About/>
         </div>
         <div>
-
+          <BackgroundImg1/>
         </div>
 
       </div>
