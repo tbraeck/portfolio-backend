@@ -20,6 +20,7 @@
     "reactjs-popup": "^2.0.6",
     "styled-components": "^6.1.8",
     "url": "^0.11.3",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

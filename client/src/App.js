@@ -1,9 +1,9 @@
 import React from 'react'
 import { Fragment } from 'react'; 
 import ScrollButton from './general/ScrollButton'; 
-import { Content, Heading } from './general/Styles'; 
-// import Header from './general/Header'
+import { Content } from './general/Styles'; 
 import Home from './general/Home';
+import HomeTitle from './general/HomeTitle';
 import ApplicationList from './ApplicationList';
 import Blog from './Blog';
 import Developer from './general/Developer';
@@ -13,6 +13,7 @@ import About from './About';
 import Footer from './general/Footer';
 import {Routes, Route} from 'react-router-dom';
 import ApplicationPage from './ApplicationPage';
+
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Route  path='/blog' element={<Blog />}/>
 
         </Routes>
+             
           <Fragment> 
             {/* <Heading>GeeksForGeeks</Heading>  */}
             <Content /> 
