@@ -17,7 +17,7 @@ const HomeTitle = ({ sound, sound1, sound2 }) => {
 
   const playSound = (sound) => {
     if (sound) {
-      play({ src: sound, volume: 0.5 }); // Play the provided sound
+      play({ src: sound, volume: 0.1 }); // Play the provided sound
     }
   };
 
@@ -59,7 +59,6 @@ const HomeTitle = ({ sound, sound1, sound2 }) => {
           </h1>
         </Link>
       </div>
-      {/* Conditional rendering of audio based on the hovered element */}
       {isHovered === 'developer' && sound && <audio autoPlay src={sound} />}
       {isHovered === 'designer' && sound1 && <audio autoPlay src={sound1} />}
       {isHovered === 'creator' && sound2 && <audio autoPlay src={sound2} />}
