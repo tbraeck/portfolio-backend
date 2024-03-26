@@ -1,4 +1,7 @@
 import React from 'react'
+import { Fragment } from 'react'; 
+import ScrollButton from './components/ScrollButton'; 
+import { Content, Heading } from './components/Styles'; 
 // import Header from './general/Header'
 import Home from './general/Home';
 import ApplicationList from './ApplicationList';
@@ -29,6 +32,11 @@ const App = () => {
 
         </Routes>
       </div>
+            <Fragment> 
+            <Heading>GeeksForGeeks</Heading> 
+            <Content /> 
+            <ScrollButton /> 
+          </Fragment> 
       <div className='footer--pin'>
               <Footer/>
         </div>

@@ -4,6 +4,7 @@ import HomeTitle from './HomeTitle';
 import Header from './Header';
 import Logo from './Logo';
 import About from '../About';
+import BackgroundImg1 from './BackgroundImg1';
 // import Background from './Background';
 // import ApplicationList from '../ApplicationList.js';
 
@@ -17,12 +18,14 @@ const Home = () => {
         <div className='homeTitle'>
           <HomeTitle />
         </div>
-      
         <div className="header">
           <Header />
         </div>
         <div style={{paddingBottom: "50px"}}>
           <About/>
+        </div>
+        <div>
+
         </div>
 
       </div>

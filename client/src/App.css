@@ -9,15 +9,29 @@ body, html {
 
 .changa-font {
   padding: 30 0 0 30;
-
   font-family: "Changa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  color:  #4f5f76;
+  color:  #0c61d8;
   font-style: normal;
   /* margin-left: 350px; */
   font-size: 100px;
 }
+
+.changa-font:hover {
+  padding: 30 0 0 30;
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* color:  #0c61d8; */
+  font-style: normal;
+  /* margin-left: 350px; */
+  font-size: 100px;
+  color: rgb(255, 249, 127);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
 
 .changa-font1 {
   padding: 30 0 0 30;
@@ -322,29 +336,46 @@ flex-direction: column;
 .display-5 {
   font-size: 2rem;
   margin-bottom: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(59, 185, 211);
 }
 
+
 .display-7 {
+  color: black;
   font-size: 1.5rem;
   margin-bottom: 15px;
   justify-content: left;
+
 }
 
 .techSKillsBox{
   /* margin-left: 50px;
   margin-top: 170px; */
   padding-left: 50px;
-  padding-top: 150px;
+  padding-top: 90px;
+/* 
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    min-height: 200px;
+    border: 8px solid;
+    padding: .5rem;
+
+  
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1; */
+  
 }
+
 
 .display-8 {
   margin-left: 40px;
   font-size: 1.5rem;
   margin-bottom: 15px;
-  width: 200px;
+  width: 250px;
   justify-content: left;
 font-weight: 800;
-text-decoration: underline;
+/* text-decoration: underline; */
 border: #333;
 border-radius: 20px;
   /* align-items: left; */
