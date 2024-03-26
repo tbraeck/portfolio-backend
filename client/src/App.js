@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'; 
-import ScrollButton from './components/ScrollButton'; 
-import { Content, Heading } from './components/Styles'; 
+import ScrollButton from './general/ScrollButton'; 
+import { Content, Heading } from './general/Styles'; 
 // import Header from './general/Header'
 import Home from './general/Home';
 import ApplicationList from './ApplicationList';
@@ -19,6 +19,7 @@ const App = () => {
   
   return (
     <div className="App">
+      
       <div className='mainContainer'>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
@@ -31,12 +32,13 @@ const App = () => {
           <Route  path='/blog' element={<Blog />}/>
 
         </Routes>
-      </div>
-            <Fragment> 
-            <Heading>GeeksForGeeks</Heading> 
+          <Fragment> 
+            {/* <Heading>GeeksForGeeks</Heading>  */}
             <Content /> 
             <ScrollButton /> 
-          </Fragment> 
+          </Fragment>
+      </div>
+            
       <div className='footer--pin'>
               <Footer/>
         </div>

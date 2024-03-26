@@ -6,7 +6,7 @@ const About = () => {
     const skillsMap = techSkills.map((skill,index) => {
         return(
             <>
-             <li key={index} style={{paddingBottom: "10px", paddingTop:"10px"}}>{skill}</li>
+             <li key={index} style={{paddingBottom: "10px", paddingTop:"10px", textTransform: "uppercase"}}>{skill}</li>
             </>
         )
         })
@@ -25,10 +25,10 @@ const About = () => {
                 </p>
             </div>
             <div className='techSKillsBox' style={{ textAlign: "center" }}>
-            <h2 className='display-8' >
+            <h2 className='display-6' >
                 TECHNICAL SKILLS  
             </h2>
-                <ul className='display-7' style={{alignContent: "center", listStyleType: "none" }}>
+                <ul className='display-7' style={{alignContent: "center", listStyleType: "none", color: "white", WebkitTextStrokeWidth: "1.5px", WebkitTextStrokeColor: "black" }}>
                     {skillsMap}
                 </ul>
             </div>

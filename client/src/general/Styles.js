@@ -13,11 +13,11 @@ export const Content = styled.div`
 export const Button = styled.div`
     position: fixed;
     width: 100%;
-    left: 50%;
-    bottom: 40px;
+    left: 95%;
+    bottom: 60px;
     height: 20px;
     font-size: 3rem;
-    z-index: 1;
+    z-index: 7;
     cursor: pointer;
-    color: green;
+    color: violet;
 `;
