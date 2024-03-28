@@ -59,8 +59,8 @@ const HomeTitle = ({ sound, sound1, sound2 }) => {
           </h1>
         </Link>
       </div>
-      {isHovered === 'developer' && sound && <audio autoPlay src={sound} />}
-      {isHovered === 'designer' && sound1 && <audio autoPlay src={sound1} />}
+      {isHovered === 'developer' && sound1 && <audio autoPlay src={sound1} />}
+      {isHovered === 'designer' && sound && <audio autoPlay src={sound} />}
       {isHovered === 'creator' && sound2 && <audio autoPlay src={sound2} />}
     </div>
   );
