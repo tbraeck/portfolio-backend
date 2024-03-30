@@ -6,7 +6,12 @@ app_data = [
     description: "Barter Barn is a forum-style app that encourages community bartering of services and goods.",
     link: "https://github.com/tbraeck/barter_barn_v2",
     demo: "https://youtu.be/H4KahrCLvLM",
-    image: 'barterBarn.png'
+    image: 'barterBarn.png',
+    technology: {
+      frontend: "REACT",
+      backend: "RUBY ON RAILS",
+      database: "SQLite"
+    }
   },
   {
     name: "Teach Source",

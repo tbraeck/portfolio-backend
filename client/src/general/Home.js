@@ -27,9 +27,9 @@ const Home = () => {
         <div style={{paddingBottom: "50px"}}>
           <About/>
         </div>
-        <div>
+        {/* <div>
           <BackgroundImg1/>
-        </div>
+        </div> */}
 
       </div>
     </div>
