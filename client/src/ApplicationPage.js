@@ -15,7 +15,7 @@ const ApplicationPage = () => {
     if (!selectedApp) {
       return <div>Loading...</div>;
     }
-
+console.log(selectedApp)
     return (
         <div className="full-height-page">
           <NavigationButtons/>
@@ -33,8 +33,12 @@ const ApplicationPage = () => {
                     </Link> */}
                 </Card.Body>
             </Card>
-            <div style={{display: "flex", flexDirection: "row"}}>
-                    
+            <div style={{ display: "flex", flexDirection: "row" }}>
+                <ul>
+                    {selectedApp.technologies.map(tech => (
+                        <li key={tech}>{tech}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
