@@ -15,11 +15,11 @@ const ApplicationPage = () => {
     if (!selectedApp) {
       return <div>Loading...</div>;
     }
-console.log(selectedApp)
+console.log(selectedApp.technologies)
     return (
         <div className="full-height-page">
           <NavigationButtons/>
-            <Card style={{ marginTop: "0px" }}>
+            <Card style={{ marginTop: "0px", display: "flex", flexDirection: "column" }}>
                 <ReactPlayer url={selectedApp.demo} controls width="100%" />
                 <Card.Body>
                     <Card.Title>{selectedApp.name}</Card.Title>
@@ -31,15 +31,19 @@ console.log(selectedApp)
                     <Link to={selectedApp.demo} target="_blank" rel="noopener noreferrer">
                         DEMO
                     </Link> */}
+                    <div className='appTechnologies'>
+                        <h3>Technologies:</h3>
+                        <ul>
+                            {Object.entries(selectedApp.technologies).map(([key, value]) => (
+                                <li key={key}>
+                                    <strong>{key}: </strong>{value}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </Card.Body>
             </Card>
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <ul>
-                    {selectedApp.technologies.map(tech => (
-                        <li key={tech}>{tech}</li>
-                    ))}
-                </ul>
-            </div>
+            
         </div>
     );
 }
