@@ -15,9 +15,9 @@ function AppProvider({ children }) {
         demo: "https://youtu.be/H4KahrCLvLM",
         image: "../barterBarn.png",
         technologies: {
-          frontend: "REACT",
-          backend: "RUBY ON RAILS",
-          database: "SQLite"
+          FRONTEND: "REACT",
+          BACKEND: "RUBY ON RAILS",
+          DATABASE: "SQLite"
         }
       },
       {
@@ -41,7 +41,7 @@ function AppProvider({ children }) {
         demo: "https://youtu.be/b4JDXWqOegs",
         image: "../drawingIdeas.png",
         technologies: {
-          frontend: "REACT",
+          FRONTEND: "REACT",
           backend: "RUBY ON RAILS",
           database: "SQLite"
         }

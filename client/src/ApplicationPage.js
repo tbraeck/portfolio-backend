@@ -20,7 +20,9 @@ console.log(selectedApp.technologies)
         <div className="full-height-page">
           <NavigationButtons/>
             <Card style={{ marginTop: "0px", display: "flex", flexDirection: "column" }}>
-                <ReactPlayer url={selectedApp.demo} controls width="100%" />
+                <ReactPlayer url={selectedApp.demo}   
+                playing={true}
+                controls width="100%" />
                 <Card.Body>
                     <Card.Title>{selectedApp.name}</Card.Title>
                     <Card.Text>{selectedApp.description}</Card.Text>
