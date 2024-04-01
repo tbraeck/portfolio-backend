@@ -19,10 +19,7 @@ const ApplicationPage = () => {
 
     return (
         <div className="app-height-page">
-            <div style={{ marginTop: "130px" }}>
-                <NavigationButtons/>
-                <NavBar />
-            </div>
+           
             <Card style={{ marginTop: "20px", marginBottom: "20px", display: "flex", flexDirection: "column" }}>
                 <ReactPlayer url={selectedApp.demo}   
                 playing={true}
