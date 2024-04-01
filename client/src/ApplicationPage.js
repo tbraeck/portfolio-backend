@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import { AppContext } from './contexts/AppContext';
+import NavBar from './general/NavBar';
 import NavigationButtons from './general/NavigationButtons';
 
 const ApplicationPage = () => {
@@ -18,7 +19,12 @@ const ApplicationPage = () => {
 console.log(selectedApp.technologies)
     return (
         <div className="full-height-page">
-          <NavigationButtons/>
+          <div style={{marginTop: "130px"}}>
+            <NavigationButtons/>
+            <NavBar />
+          </div>
+         
+
             <Card style={{ marginTop: "0px", display: "flex", flexDirection: "column" }}>
                 <ReactPlayer url={selectedApp.demo}   
                 playing={true}
