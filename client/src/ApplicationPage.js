@@ -16,16 +16,14 @@ const ApplicationPage = () => {
     if (!selectedApp) {
       return <div>Loading...</div>;
     }
-console.log(selectedApp.technologies)
-    return (
-        <div className="full-height-page">
-          <div style={{marginTop: "130px"}}>
-            <NavigationButtons/>
-            <NavBar />
-          </div>
-         
 
-            <Card style={{ marginTop: "0px", display: "flex", flexDirection: "column" }}>
+    return (
+        <div className="app-height-page">
+            <div style={{ marginTop: "130px" }}>
+                <NavigationButtons/>
+                <NavBar />
+            </div>
+            <Card style={{ marginTop: "20px", marginBottom: "20px", display: "flex", flexDirection: "column" }}>
                 <ReactPlayer url={selectedApp.demo}   
                 playing={true}
                 controls width="100%" />
@@ -35,10 +33,6 @@ console.log(selectedApp.technologies)
                     <Link to={selectedApp.link} target="_blank" rel="noopener noreferrer">
                         GITHUB
                     </Link>
-                    {/* <br />
-                    <Link to={selectedApp.demo} target="_blank" rel="noopener noreferrer">
-                        DEMO
-                    </Link> */}
                     <div className='appTechnologies'>
                         <h3>Technologies:</h3>
                         <ul>
@@ -51,7 +45,6 @@ console.log(selectedApp.technologies)
                     </div>
                 </Card.Body>
             </Card>
-            
         </div>
     );
 }

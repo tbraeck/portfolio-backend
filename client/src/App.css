@@ -202,9 +202,9 @@ display: flex;
 }
 
 .mainContainer{
-  align-content: center;
-display: flex;
-flex-direction: column;
+  /* align-content: center; */
+  display: flex;
+  flex-direction: column;
 /* height: 50vh; */
 }
 
@@ -228,9 +228,8 @@ flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Full-height page styling */
-.full-height-page {
-  height: 80vh;
+.app-height-page {
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
