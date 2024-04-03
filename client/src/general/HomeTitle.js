@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, {  useRef } from 'react';
 import { Link } from 'react-router-dom';
-import useSound from 'use-sound';
+// import useSound from 'use-sound';
 
 const HomeTitle = ({ sound, sound1, sound2 }) => {
   // const [isHovered, setIsHovered] = useState(null);
@@ -15,6 +15,10 @@ const HomeTitle = ({ sound, sound1, sound2 }) => {
       elementRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+  // const scrollToSection = (elementRef) => {
+  //   elementRef.current?.scrollIntoView({ block: "start", inline: "start", behavior: "smooth" });
+  // };
   
 
   // const handleHover = (element, sound) => {

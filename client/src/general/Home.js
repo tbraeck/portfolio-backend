@@ -22,7 +22,6 @@ const Home = () => {
         <div className='homeTitle'>
           <HomeTitle/>
           {/* <HomeTitle sound={pianoSound1} sound1={pianoSound2} sound2={pianoSound3}/> */}
-
         </div>
         <div className="header">
           <Header />
