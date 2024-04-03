@@ -15,24 +15,28 @@ const Home = () => {
   
   return (
         <div className='homeContainer' >
-      <div >
-        <div className="logo">
-          <Logo className='rotate-scale-up'/>
-        </div>
-        <div className='homeTitle'>
-          <HomeTitle/>
-          {/* <HomeTitle sound={pianoSound1} sound1={pianoSound2} sound2={pianoSound3}/> */}
-        </div>
-        <div className="header">
-          <Header />
-        </div>
-        {/* <div style={{paddingBottom: "50px"}}>
+          <div>
+            <div className="logo">
+              <Logo className='rotate-scale-up'/>
+            </div>
+            <div className='homeTitle'>
+              <HomeTitle/>
+            </div>
+            <div className="header">
+              <Header />
+            </div>
+          <div id='developer' className='developerSection'>
+        <h2>Developer</h2>
+      </div>
+      <div id='designer' className='designerSection'>
+        <h2>Designer</h2>
+      </div>
+      <div id='creator' className='creatorSection'>
+        <h2>Creator</h2>
+      </div>
+        <div style={{paddingBottom: "50px"}}>
           <About/>
-        </div> */}
-        {/* <div>
-          <BackgroundImg1/>
-        </div> */}
-
+        </div> 
       </div>
     </div>
 

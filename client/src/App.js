@@ -3,20 +3,15 @@ import { Fragment } from 'react';
 import ScrollButton from './general/ScrollButton'; 
 import { Content } from './general/Styles'; 
 import Home from './general/Home';
-import HomeTitle from './general/HomeTitle';
 import ApplicationList from './ApplicationList';
 import Blog from './Blog';
 import Developer from './general/Developer';
-import Designer from './general/Designer';
 import Creator from './general/Creator';
 import About from './About';
 import Footer from './general/Footer';
 import {Routes, Route} from 'react-router-dom';
 import ApplicationPage from './ApplicationPage';
 import DesignCard from './general/DesignCard';
-import NavigationButtons from './general/NavigationButtons';
-import NavBar from './general/NavBar';
-
 
 const App = () => {
   
