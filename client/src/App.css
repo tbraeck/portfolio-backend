@@ -1,6 +1,6 @@
 /* Reset default styles */
 body, html {
-  height: 180%;
+  height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@ body, html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-left: 460px;
+  margin-left: 780px;
   font-size: 100px;
 }
 
@@ -103,7 +103,7 @@ display: flex;
   background-position: center top;
   position: relative;
   width: 100%;
-  height: 10  0vh;
+  height: 100vh;
   z-index: 1;
   opacity: 0.7;
 }
@@ -131,7 +131,7 @@ display: flex;
   margin-bottom: 20px; */
   position: fixed; /* Set the navbar to fixed position */
   bottom: 0; /* Position the navbar at the bottom of the page */
-  width: 60%; 
+  width: 100%; 
   
 }
 
@@ -168,7 +168,7 @@ display: flex;
 }
 
     .logo {
-      margin-left: 700px;
+      margin-left: 1000px;
       transition: all .2s ease-in-out; 
       margin-bottom: 20px;
     }
@@ -213,7 +213,7 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
   background-image: url('../public/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,7 +221,7 @@ display: flex;
 }
 
 .full-width-page {
-  max-width: 300px;
+  max-width: 100vw;
   padding: 0px;
   background-color: #fff;
   border-radius: 8px;
@@ -264,7 +264,7 @@ display: flex;
   /* justify-content: center; */
   width: 100vw;
   justify-content: center;
-  height: 300vh;
+  height: 120vh;
 }
 /* Home section styling */
 .home {
@@ -416,6 +416,8 @@ border-radius: 20px;
   color: rgb(242, 19, 138);
   text-decoration: none;
   transition: all .2s ease-out; 
+  cursor: pointer;
+
 }
 
 .devLink:hover { 
@@ -429,6 +431,7 @@ transform: scale(0.9);
   color: rgb(242, 19, 138);
   text-decoration: none;
   transition: all .2s ease-out; 
+  cursor: pointer;
 }
 
 .desLink:hover { 
@@ -442,6 +445,9 @@ transform: scale(0.9);
   color: rgb(242, 19, 138);
   text-decoration: none;
   transition: all .2s ease-in-out; 
+  cursor: pointer;
+  margin-bottom: 400px;
+
 }
 .creaLink:hover { 
   color: rgb(219, 127, 255);
@@ -455,6 +461,30 @@ display: flex;
 flex-direction: column;
 
 }
+
+/* .landingPage{
+  height: 1000px;
+  background-color: #b33e3e;
+} */
+.developerSection{
+height: 800px;
+padding-top: 350px;
+background-color: bisque;
+}
+
+.designerSection{
+  height: 800px;
+  width: cover;
+  padding-top: 20px;
+  background-color: rgb(226, 255, 196);
+  }
+
+  .creatorSection{
+    height: 800px;
+    width: cover;
+    padding-top: 20px;
+    background-color: rgb(249, 196, 255);
+    }
 
 .appTechnologies{
   margin: 30px;

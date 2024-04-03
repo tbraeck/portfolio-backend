@@ -1,4 +1,4 @@
-import {useRef} from 'react';
+import React from 'react';
 import HomeTitle from './HomeTitle';
 // import { Link } from 'react-router-dom';
 import Header from './Header';
@@ -27,9 +27,9 @@ const Home = () => {
         <div className="header">
           <Header />
         </div>
-        <div style={{paddingBottom: "50px"}}>
+        {/* <div style={{paddingBottom: "50px"}}>
           <About/>
-        </div>
+        </div> */}
         {/* <div>
           <BackgroundImg1/>
         </div> */}
