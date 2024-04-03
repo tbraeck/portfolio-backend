@@ -19,7 +19,7 @@ const ApplicationList = () => {
   return (
     <div className='appList' style={{justifyContent: "center", alignItems: "center"}}>
     
-      <h1 >Development Examples</h1>
+      <h1  >Development Examples</h1>
       <div className="card-container" >
         {everyApp}
       </div>
