@@ -3,7 +3,7 @@ import HomeTitle from './HomeTitle';
 // import { Link } from 'react-router-dom';
 import Header from './Header';
 import Logo from './Logo';
-import About from '../About';
+// import About from '../About';
 // import BackgroundImg1 from './BackgroundImg1';
 // import pianoSound1 from './piano1.mp3'; 
 // import pianoSound2 from './piano2.mp3';
@@ -25,18 +25,9 @@ const Home = () => {
             <div className="header">
               <Header />
             </div>
-          <div id='developer' className='developerSection'>
-        <h2>Developer</h2>
-      </div>
-      <div id='designer' className='designerSection'>
-        <h2>Designer</h2>
-      </div>
-      <div id='creator' className='creatorSection'>
-        <h2>Creator</h2>
-      </div>
-        <div style={{paddingBottom: "50px"}}>
+        {/* <div style={{paddingBottom: "50px"}}>
           <About/>
-        </div> 
+        </div>  */}
       </div>
     </div>
 
